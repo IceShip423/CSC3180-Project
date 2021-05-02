@@ -176,6 +176,8 @@ Citys = []
 for i in range(CityNum-1):
     Citys.append([random.randint(-35, 35), random.randint(-35, 35)])
 Citys.append(radarCenter)  # the last 'node' is radar boarder
+
+
 initTimeMatrix()
 initPheromoneMtx()
 print("problem:")

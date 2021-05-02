@@ -20,6 +20,8 @@ Radar center coordinate *20:
 1281 440
 1135 1021
 
+bestTour: 19, 15, 14, 9, 4, 3, 1, 11, 5, 6, 2, 8, 13, 18, 10, 12, 17, 7, 0, 16
+
 Targets inside radars 20*20:
 #0
 problem:

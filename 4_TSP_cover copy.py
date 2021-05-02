@@ -95,8 +95,6 @@ def TspSolve():
             allowed.remove(tabu[0])
             for i in range(CityNum-1):
                 selectNextCity(tabu, allowed)
-            # return to first city
-            tabu.append(tabu[0])
 
             antLength = getRouteLength(tabu)
             if (antLength < bestLength):
@@ -110,8 +108,8 @@ def TspSolve():
                                              ] = deltaPheromoneMtx_i[tabu[i+1]][tabu[i]] = float(1.0/antLength)
             deltaPheromoneMtx.append(deltaPheromoneMtx_i)
         updatePheromoneMtx(deltaPheromoneMtx)
-    print(bestTour)
     plot(bestTour)
+    print(bestTour)
     print("bestLength:", bestLength)
 
 
@@ -128,7 +126,7 @@ def plot(Route):
         turtle.dot(4, "red")
     turtle.hideturtle()
     ts = turtle.getscreen()
-    ts.getcanvas().postscript(file="radar_close.eps")
+    ts.getcanvas().postscript(file="radar_cover.eps")
     turtle.done()
 
 
